@@ -1,10 +1,10 @@
-executable      =   Model.sh
-Output          =   project/7008-Projects/Model/output.txt
-Error           =   project/7008-Projects/Model/error.txt
-Log             =   project/7008-Projects/Model/log.txt
+executable      =   Modelling.sh
+Output          =   project/Modelling/output.txt
+Error           =   project/Modelling/error.txt
+Log             =   project/Modelling/log.txt
 
 notification=Never
-Arguements=$(Process)
+Arguments=$(Process)
 PeriodicRelease=(JobStatus==5)&&(CurrentTime-EnteredCurrentState>30)
 onExitRemove=(ExitStatus==0)
 Queue
